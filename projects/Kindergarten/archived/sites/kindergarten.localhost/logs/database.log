@@ -1,2 +1,0 @@
-2026-01-10 12:27:13,932 WARNING database DDL Query made to DB:
-DROP USER IF EXISTS 'kindergarten_db'@'localhost'
