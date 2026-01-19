@@ -1,16 +1,33 @@
-# Student – David
+### Kindergarten Platform
 
-This repository contains all approved work, learning material, and project contributions completed by David as part of the Biko Today programme.
+The KinderGarten Platform is a school management system designed to unify communication, learning records, billing, and administration into a single, secure, digital ecosystem
 
-## Purpose
-- Track skill development over time
-- Store verifiable proof of work
-- Maintain professional project documentation
+### Installation
 
-## Rules (Non-Negotiable)
-- Do not upload client credentials, API keys, tokens, or secrets.
-- Do not upload raw client databases, exports, or private customer information.
-- All client work must be anonymised unless written approval is given.
-- Keep work structured and documented — no random uploads.
+You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
-Failure to follow these rules may result in removal from the Biko Today programme and access revoked.
+```bash
+cd $PATH_TO_YOUR_BENCH
+bench get-app $URL_OF_THIS_REPO --branch develop
+bench install-app kindergarten_core
+```
+
+### Contributing
+
+This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+
+```bash
+cd apps/kindergarten_core
+pre-commit install
+```
+
+Pre-commit is configured to use the following tools for checking and formatting your code:
+
+- ruff
+- eslint
+- prettier
+- pyupgrade
+
+### License
+
+mit
